@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taige Tomlinson — Mechanical &amp; Biomechanical Engineering</title>
+<meta name="description" content="Portfolio of Taige Tomlinson — mechanical and biomechanical engineering, implant research, and applied design projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sheet-border" aria-hidden="true">
+  <span class="corner tl"></span>
+  <span class="corner tr"></span>
+  <span class="corner bl"></span>
+  <span class="corner br"></span>
+</div>
+
+<header class="nav">
+  <a href="#top" class="wordmark">TAIGE TOMLINSON</a>
+  <nav class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <p class="eyebrow">MECH. ENG. — QUEEN'S UNIVERSITY / BIOMECHANICAL FOCUS</p>
+    <h1 class="hero-title">Designing at the<br>interface of bone and metal.</h1>
+    <p class="hero-sub">
+      I'm a mechanical engineering student researching how implants behave inside the body —
+      from shoulder replacement fixation to low-cost prosthetics — using mechanical testing,
+      motion capture, and hands-on device design.
+    </p>
+    <div class="hero-actions">
+      <a href="#work" class="btn btn-primary">See the work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- ANODIZE DIVIDER -->
+  <div class="anodize-divider" role="separator" aria-hidden="true">
+    <div class="anodize-bar"></div>
+    <span class="anodize-caption">Ti-6Al-4V ANODIZED FINISH — REFERENCE SPECTRUM, 10–100V</span>
+  </div>
+
+  <!-- WORK -->
+  <section id="work" class="work">
+    <p class="section-label">SELECTED WORK</p>
+
+    <article class="project">
+      <div class="project-meta">
+        <span class="tag tag-research">THESIS / RESEARCH — 2026</span>
+      </div>
+      <h2 class="project-title">Effect of Joint Loading Angle on Glenoid Baseplate Micromotion</h2>
+      <p class="project-desc">
+        Undergraduate thesis testing how the direction of joint loading affects micromotion
+        at the bone–implant interface in Reverse Shoulder Arthroplasty — the key factor
+        determining whether a baseplate achieves long-term osseointegration or loosens.
+        Used an anatomically correct Sawbones scapula model and LVDT instrumentation to
+        compare loading along the scapular plane versus the transverse scapular plane.
+      </p>
+      <ul class="project-specs">
+        <li><span>Mean micromotion, 0°</span>17.216 µm</li>
+        <li><span>Mean micromotion, 90°</span>121.047 µm</li>
+        <li><span>Significance</span>Welch's t-test, p &lt; 0.0001</li>
+        <li><span>Supervisors</span>Dr. Tim Bryant, Dr. Heidi Ploeg</li>
+      </ul>
+      <div class="project-media two-up">
+        <figure>
+          <img src="assets/thesis-rig.jpg" alt="Glenoid baseplate micromotion testing rig with LVDTs mounted at 90 degrees">
+          <figcaption>LVDT test rig, 90° loading configuration</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/thesis-force-curve.jpg" alt="Force-displacement curves comparing 0-degree and 90-degree loading conditions">
+          <figcaption>Force–displacement response, 0° vs. 90°</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-meta">
+        <span class="tag tag-research">TEAM DESIGN — MECH 462, 2026</span>
+      </div>
+      <h2 class="project-title">Niagara Foot M3V01</h2>
+      <p class="project-desc">
+        A team re-engineering effort on a prosthetic foot adapter, done in collaboration with
+        DOI Ortho-Innovativ to improve access to high-functioning prosthetics in low-resourced
+        regions. Iterated on a potted adapter insert design, developed 3D-printed tooling for
+        manufacturing, and validated the approach through MTS displacement-controlled testing.
+      </p>
+      <ul class="project-specs">
+        <li><span>Goal</span>Match Niagara Foot Model 2 performance at 30% of prior cost</li>
+        <li><span>Method</span>Polyurethane potting, 3D-printed tooling, MTS testing</li>
+        <li><span>Team</span>5-person design team, faculty advisor Dr. Tim Bryant</li>
+      </ul>
+      <div class="project-media two-up">
+        <figure>
+          <img src="assets/niagara-adapter-cad.jpg" alt="CAD render of the redesigned pyramid adapter insert">
+          <figcaption>Redesigned adapter insert, CAD</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/niagara-mts-test.jpg" alt="MTS displacement-controlled testing of the potted adapter">
+          <figcaption>MTS displacement-controlled verification test</figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-meta">
+        <span class="tag tag-research">RESEARCH / MATLAB</span>
+      </div>
+      <h2 class="project-title">Unilateral Load Carrying &amp; Trunk Kinematics</h2>
+      <p class="project-desc">
+        Marker-based motion capture study tracking shoulder obliquity and trunk lean while
+        walking with a one-sided load, aimed at understanding the postural strain of carrying
+        an infant on one side and informing ways to reduce it. Built a full MATLAB pipeline
+        to clean marker trajectories, segment gait cycles, and compare loading conditions.
+      </p>
+      <ul class="project-specs">
+        <li><span>Built with</span>MATLAB, QTM motion capture data</li>
+        <li><span>Metrics</span>Shoulder obliquity, trunk lean, normalized gait cycle</li>
+        <li><span>Conditions</span>No weight, left-hand load, right-hand load</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div class="project-meta">
+        <span class="tag tag-maker">TECHNICAL DRAWING — MECH 323, 2026</span>
+      </div>
+      <h2 class="project-title">Exploded View Gearbox</h2>
+      <p class="project-desc">
+        A fully dimensioned exploded-view assembly drawing of a gearbox, produced as part of
+        a machine design course — covering part numbering, a complete bill of materials, and
+        drawing conventions for manufacturing handoff.
+      </p>
+      <ul class="project-specs">
+        <li><span>Built with</span>SolidWorks</li>
+        <li><span>Scope</span>8-part BOM, full exploded assembly, scale 1:5</li>
+      </ul>
+      <div class="project-media">
+        <figure>
+          <img src="assets/gearbox-exploded.jpg" alt="Exploded view technical drawing of a gearbox assembly with numbered parts and bill of materials">
+          <figcaption>Exploded assembly drawing with BOM callouts</figcaption>
+        </figure>
+      </div>
+    </article>
+  </section>
+
+  <p class="project-more">
+    Other projects: an IV insertion trainer built from CAD and mechanical/electrical
+    components for nurse training, an assistive personal hygiene device designed with
+    a patient with severe joint disorders, and an FEA-driven redesign of a boat anchor
+    that cut weight by 40% without increasing stress or deformation.
+  </p>
+
+  <div class="anodize-divider" role="separator" aria-hidden="true">
+    <div class="anodize-bar"></div>
+    <span class="anodize-caption">SECTION 02 — ABOUT</span>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-frame">
+      <span class="frame-label">FIG. 01</span>
+      <div class="about-photo">
+        <span>PHOTO</span>
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="section-label">ABOUT</p>
+      <p>
+        I'm completing a BASc in Mechanical Engineering at Queen's University and starting a
+        research-based MASc in Biomechanical Engineering there in 2026, focused on
+        biomechanics, implant fixation, and design for medical devices.
+      </p>
+      <p>
+        My work spans mechanical testing and motion analysis — from cyclic loading rigs for
+        shoulder implants to marker-based motion capture in MATLAB — alongside hands-on
+        device design for clients like DOI Ortho-Innovativ and hospital-based end users.
+      </p>
+    </div>
+  </section>
+
+  <div class="anodize-divider" role="separator" aria-hidden="true">
+    <div class="anodize-bar"></div>
+    <span class="anodize-caption">SECTION 03 — CONTACT</span>
+  </div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <p class="section-label">CONTACT</p>
+    <h2 class="contact-title">Let's talk.</h2>
+    <div class="contact-links">
+      <a href="mailto:taigetomlinson2003@gmail.com">taigetomlinson2003@gmail.com</a>
+      <a href="https://www.linkedin.com/in/taige-tomlinson/">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© 2026 TAIGE TOMLINSON</span>
+  <span>BUILT &amp; DEPLOYED ON VERCEL</span>
+</footer>
+
+</body>
+</html>
